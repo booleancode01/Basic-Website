@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Website</title>
+        <link rel = "stylesheet" href = "style.css"></link>
+        <script src="https://kit.fontawesome.com/72ae57c8f1.js" crossorigin="anonymous"></script>
+
+        <script language="javascript" type="text/javascript">
+            function clearText(field) {
+                if (field.defaultValue == field.value) field.value = '';
+                else if (field.value == '') field.value = field.defaultValue;
+            }
+        </script>
+        
+        <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            $(window).load(function () {
+                $('#slider').nivoSlider({
+                    effect: 'random',
+                    slices: 10,
+                    animSpeed: 500,
+                    pauseTime: 5000,
+                    startSlide: 0, //Set starting Slide (0 index)
+                    directionNav: false,
+                    directionNavHide: false, //Only show on hover
+                    controlNav: false, //1,2,3...
+                    controlNavThumbs: false, //Use thumbnails for Control Nav
+                    pauseOnHover: true, //Stop animation while hovering
+                    manualAdvance: false, //Force manual transitions
+                    captionOpacity: 0.8, //Universal caption opacity
+                    beforeChange: function () { },
+                    afterChange: function () { },
+                    slideshowEnd: function () { } //Triggers after all slides have been shown
+                });
+            });
+        </script>
+    </head>
+    <body>
+       <div class="headersection templete clear">
+           <div class="logo">
+               <img src="./images/logo.png" alt="logo">
+               <h2>Website Title</h2>
+               <p>Our website description</p>
+           </div>
+           <div class="social">
+                <a target = "_blank" href="https://web.facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a target = "_blank" href="https://twitter.com/explore">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a target = "_blank" href="https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a  href="https://aboutme.google.com/u/0/?referer=gplus">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+           </div>
+       </div>
+       <div class="navsection templete">
+            <ul>
+                <li><a id=active href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Products</a>
+                    <ul>
+                        <li><a href="#"> Product one </a></li>
+                        <li><a href="#"> Product two </a></li>
+                        <li><a href="#"> Product three </a></li>
+                        <li><a href="#"> Product four </a></li>
+                        <li><a href="#"> Product five </a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">Privacy</a></li>
+                <li><a href="about.html">DMCA</a></li>
+                <li><a href="contact.html">Contact</a>
+                    <ul>
+                        <li><a href="#"> Address one </a></li>
+                        <li><a href="#"> Address two </a></li>
+                        <li><a href="#"> Address three </a></li>
+                        <li><a href="#"> Address four </a></li>
+                        <li><a href="#"> Address five </a></li>
+                    </ul>
+                </li>
+            </ul>
+       </div>
+       <div class="slidersection templete clear">
+        <div id="slider">
+            <a href="#"><img src="images/slideshow/01.jpg" alt="nature 1"
+                    title="This is slider one title or description." /></a>
+            <a href="#"><img src="images/slideshow/02.jpg" alt="nature 2"
+                    title="This is slider two title or description." /></a>
+            <a href="#"><img src="images/slideshow/03.jpg" alt="nature 3"
+                    title="This is slider three title or description." /></a>
+            <a href="#"><img src="images/slideshow/04.jpg" alt="nature 4"
+                    title="This is slider four title or description." /></a>
+        </div>
+       </div>
+       <div class="contentsection templete clear">
+           <div class="maincontent">
+              <div class="samepost">
+                <h2>Our post here</h2>
+                <img src="./images/1.jfif" alt="are you sure"/>
+                    <i class="fab fa-facebook-f"></i>
+                    <p>
+                    main content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cupiditate, consequuntur nostrum
+                    deleniti ipsum adipisci doloremque excepturi doloribus maiores fuga, vitae quis rem nulla ratione sint vel! Eius,
+                    provident delectus?Eos necessitatibus deleniti corporis voluptas, nobis fugiat! Ipsum possimus facilis, esse
+                    main content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cupiditate, consequuntur nostrum
+                    deleniti ipsum adipisci doloremque excepturi doloribus maiores fuga, vitae quis rem nulla ratione sint vel! Eius,
+                    provident delectus?Eos necessitatibus deleniti corporis voluptas, nobis fugiat! Ipsum possimus facilis, esse
+                    aliquid fugit nam pariatur, sint in?
+                </p>
+                <div class="readmore"><a href = "post.html" > Read More</a></div>
+              </div>
+            <div class="samepost">
+                <h2>Our post here</h2>
+                <img src="./images/2.jfif" alt="are you sure" />
+                <p>
+                    main content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cupiditate, consequuntur nostrum
+                    deleniti ipsum adipisci doloremque excepturi doloribus maiores fuga, vitae quis rem nulla ratione sint vel!
+                    Eius,
+                    provident delectus?Eos necessitatibus deleniti corporis voluptas, nobis fugiat! Ipsum possimus facilis, esse
+                    main content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cupiditate, consequuntur nostrum
+                    deleniti ipsum adipisci doloremque excepturi doloribus maiores fuga, vitae quis rem nulla ratione sint vel!
+                    Eius,
+                    provident delectus?Eos necessitatibus deleniti corporis voluptas, nobis fugiat! Ipsum possimus facilis, esse
+                    aliquid fugit nam pariatur, sint in?
+                </p>
+                <div class="readmore"><a href="post.html"> Read More</a></div>
+            </div>
+            <div class="samepost">
+                <h2>Our post here</h2>
+                <img src="./images/3.jpg" alt="are you sure" />
+                <p>
+                    main content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cupiditate, consequuntur nostrum
+                    deleniti ipsum adipisci doloremque excepturi doloribus maiores fuga, vitae quis rem nulla ratione sint vel!
+                    Eius,
+                    provident delectus?Eos necessitatibus deleniti corporis voluptas, nobis fugiat! Ipsum possimus facilis, esse
+                    main content Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cupiditate, consequuntur nostrum
+                    deleniti ipsum adipisci doloremque excepturi doloribus maiores fuga, vitae quis rem nulla ratione sint vel!
+                    Eius,
+                    provident delectus?Eos necessitatibus deleniti corporis voluptas, nobis fugiat! Ipsum possimus facilis, esse
+                    aliquid fugit nam pariatur, sint in?
+                </p>
+                <div class="readmore"><a href="post.html"> Read More</a></div>
+            </div>
+            <div class="relatedpost templete clear">
+                <h2> Related articles</h2>
+                <a href="post.html"><img src="./images/1.jfif" alt="related post one"></a>
+                <a href="post.html"><img src="./images/2.jfif" alt="related post one"></a>
+                <a href="post.html"><img src="./images/post.png" alt="related post one"></a>
+                <a href="post.html"><img src="./images/popular.jpg" alt="related post one"></a>
+                <a href="post.html"><img src="./images/Rayhan.jpg" alt="related post one"></a>
+                <a href="post.html"><img src="./images/tourist.png" alt="related post one"></a>
+            </div>
+           </div>
+           <div class="sidebar templete clear">
+               <div class="samesidebar">
+                <h2>Latest article</h2>
+                <ul>
+                    <li><a href="">latest post one is here</a></li>
+                    <li><a href="">latest post two is here</a></li>
+                    <li><a href="">latest post three is here</a></li>
+                    <li><a href="">latest post four is here</a></li>
+                    <li><a href="">latest post five is here</a></li>
+                    <li><a href="">latest post six is here</a></li>
+                </ul>
+               </div>
+                <div class="samesidebar templete clear">
+                    <h2>Popular article</h2>
+                    <div class="popular">
+                        <h3><a href = "post.html">popular post will go here...</a></h3>
+                        <img src="./images/3.jpg" alt="popular">
+                        <p>
+                            sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate esse consectetur incidunt, optio
+                            totam quibusdam? Recusandae incidunt provident delectus dolor ipsam reiciendis, natus, sequi quod quo blanditiis
+                        </p>
+                    </div>
+                    <div class="popular">
+                        <h3><a href="post.html">popular post will go here...</a></h3>
+                        <img src="./images/3.jpg" alt="popular">
+                        <p>
+                            sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate esse consectetur incidunt, optio
+                            totam quibusdam? Recusandae incidunt provident delectus dolor ipsam reiciendis, natus, sequi quod quo blanditiis
+                        </p>
+                    </div>
+                    <div class="popular">
+                        <h3><a href="post.html">popular post will go here...</a></h3>
+                        <img src="./images/3.jpg" alt="popular">
+                        <p>
+                            sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate esse consectetur incidunt, optio
+                            totam quibusdam? Recusandae incidunt provident delectus dolor ipsam reiciendis, natus, sequi quod quo blanditiis
+                        </p>
+                    </div>
+                    <div class="popular">
+                        <h3><a href="post.html">popular post will go here...</a></h3>
+                        <img src="./images/3.jpg" alt="popular">
+                        <p>
+                            sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate esse consectetur incidunt, optio
+                            totam quibusdam? Recusandae incidunt provident delectus dolor ipsam reiciendis, natus, sequi quod quo blanditiis
+                        </p>
+                    </div>
+                </div>
+                <div class="samesidebar templete clear">
+                    <h2>sidebar three header</h2>
+                    <p>
+                        sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate esse consectetur incidunt, optio
+                        totam quibusdam? Recusandae incidunt provident delectus dolor ipsam reiciendis, natus, sequi quod quo blanditiis
+                    </p>
+                    <p>
+                        sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate esse consectetur incidunt, optio
+                        totam quibusdam? Recusandae incidunt provident delectus dolor ipsam reiciendis, natus, sequi quod quo blanditiis
+                    </p>
+                </div>
+           </div>
+       </div>
+       <div class="footersection templete clear">
+           <div class="footermenu templete clear">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; copyright by training with live project</p>
+           </div>
+       </div>
+       <div class="fixedicon templete clear">
+        <a href="https://web.facebook.com/?_rdc=1&_rdr">
+            <img src="./images/facebook.png" alt="facebook">
+        </a>
+        <a href="https://twitter.com/">
+            <img src="./images/twiter.png" alt="twiter">
+        </a>
+        <a href="https://www.linkedin.com/">
+            <img src="./images/linkedin.png" alt="linkedin">
+        </a>
+        <a href="https://support.google.com/plus/answer/1301225?co=GENIE.Platform%3DDesktop&hl=en">
+            <img src="./images/google+.png" alt="google+">
+        </a>
+       </div>
+    <script type="text/javascript">var scrolltotop = { setting: { startline: 100, scrollto: 0, scrollduration: 1e3, fadeduration: [500, 100] }, controlHTML: '<img src="./images/arrow.png" />', controlattrs: { offsetx: 5, offsety: 5 }, anchorkeyword: "#top", state: { isvisible: !1, shouldvisible: !1 }, scrollup: function () { this.cssfixedsupport || this.$control.css({ opacity: 0 }); var t = isNaN(this.setting.scrollto) ? this.setting.scrollto : parseInt(this.setting.scrollto); t = "string" == typeof t && 1 == jQuery("#" + t).length ? jQuery("#" + t).offset().top : 0, this.$body.animate({ scrollTop: t }, this.setting.scrollduration) }, keepfixed: function () { var t = jQuery(window), o = t.scrollLeft() + t.width() - this.$control.width() - this.controlattrs.offsetx, s = t.scrollTop() + t.height() - this.$control.height() - this.controlattrs.offsety; this.$control.css({ left: o + "px", top: s + "px" }) }, togglecontrol: function () { var t = jQuery(window).scrollTop(); this.cssfixedsupport || this.keepfixed(), this.state.shouldvisible = t >= this.setting.startline ? !0 : !1, this.state.shouldvisible && !this.state.isvisible ? (this.$control.stop().animate({ opacity: 1 }, this.setting.fadeduration[0]), this.state.isvisible = !0) : 0 == this.state.shouldvisible && this.state.isvisible && (this.$control.stop().animate({ opacity: 0 }, this.setting.fadeduration[1]), this.state.isvisible = !1) }, init: function () { jQuery(document).ready(function (t) { var o = scrolltotop, s = document.all; o.cssfixedsupport = !s || s && "CSS1Compat" == document.compatMode && window.XMLHttpRequest, o.$body = t(window.opera ? "CSS1Compat" == document.compatMode ? "html" : "body" : "html,body"), o.$control = t('<div id="topcontrol">' + o.controlHTML + "</div>").css({ position: o.cssfixedsupport ? "fixed" : "absolute", bottom: o.controlattrs.offsety, right: o.controlattrs.offsetx, opacity: 0, cursor: "pointer" }).attr({ title: "Scroll to Top" }).click(function () { return o.scrollup(), !1 }).appendTo("body"), document.all && !window.XMLHttpRequest && "" != o.$control.text() && o.$control.css({ width: o.$control.width() }), o.togglecontrol(), t('a[href="' + o.anchorkeyword + '"]').click(function () { return o.scrollup(), !1 }), t(window).bind("scroll resize", function (t) { o.togglecontrol() }) }) } }; scrolltotop.init();</script>
+    </body>
+</html>
